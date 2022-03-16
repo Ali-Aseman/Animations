@@ -1,0 +1,108 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.container-black {
+    background-color: #fff;
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-white {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    bottom: 4px;
+    left: 4px;
+    background-color: #fff;
+}
+
+.line-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 4px;
+    background-color: #000;
+}
+
+.line-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 4px;
+    height: 0%;
+    background-color: #000;
+}
+
+.line-bottom {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0%;
+    height: 4px;
+    background-color: #000;
+}
+
+.line-left {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 4px;
+    height: 0%;
+    background-color: #000;
+}
+
+.title {
+    color: #fff;
+}
+
+.square-top-left {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1px;
+    height: 1px;
+    z-index: 11;
+    background-color: #fff;
+}
+
+.square-top-right {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 1px;
+    height: 1px;
+    z-index: 11;
+    background-color: #fff;
+}
+
+.square-bottom-left {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 1px;
+    height: 1px;
+    z-index: 11;
+    background-color: #fff;
+}
+
+.square-bottom-right {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 1px;
+    height: 1px;
+    z-index: 11;
+    background-color: #fff;
+}
