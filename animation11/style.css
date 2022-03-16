@@ -1,0 +1,132 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    min-height: 100vh;
+    /* overflow: hidden; */
+}
+
+.container-custom {
+    width: 100%;
+    background-color: #000;
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    color: #fff;
+    overflow: hidden;
+}
+
+.line-top {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 10%;
+    background-color: #fff;
+    width: 0;
+    cursor: pointer;
+    z-index: 4;
+}
+
+.container-text0 {
+    color: #000;
+    width: 300px;
+    margin-left: 200px;
+    z-index: 7;
+}
+
+.container-text {
+    color: #000;
+    z-index: 7;
+}
+
+.container-text2 {
+    color: #000;
+    z-index: 7;
+    border-left: 4px solid orange;
+}
+
+.fab {
+    color: #000;
+    margin-right: 10px;
+}
+
+.container-text h1,
+.container-text p,
+.container-text2 p {
+    background-color: rgba(255, 255, 255, .8);
+}
+
+.line-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 0;
+    background-color: #fff;
+    width: 25%;
+    z-index: 4;
+    cursor: pointer;
+}
+
+.text {
+    opacity: 0;
+    transform: translateX(-100px)
+}
+
+.background-white {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    z-index: 5;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.line-before-image {
+    width: 100%;
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    bottom: 0;
+    right: -100%;
+    background-color: orange;
+}
+
+.line-mask {
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #000;
+}
+
+.line-image {
+    position: absolute;
+    top: 10%;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    width: 75%;
+    background-image: url('https://images.unsplash.com/photo-1523127669018-f09eda991efa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3025&q=80');
+    background-position: center;
+    background-size: cover;
+}
+
+.line-image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .2);
+}

@@ -1,0 +1,153 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    min-height: 100vh;
+    /* overflow: hidden; */
+}
+
+.container-articles {
+    padding: 50px 0px 50px 20px;
+}
+
+.container-articles2 {
+    padding: 50px 20px 50px 0px;
+}
+
+.line-top {
+    width: 0;
+    height: 1px;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: -500%;
+}
+
+.container-articles2 .line-top {
+    width: 0;
+    height: 1px;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    right: -500%;
+    left: initial;
+}
+
+.container-background {
+    background-color: #fff;
+    position: absolute;
+    left: -500%;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 0;
+    z-index: 0;
+}
+
+.container-articles2 .container-background {
+    background-color: #fff;
+    position: absolute;
+    right: -500%;
+    top: 0;
+    left: initial;
+    bottom: 0;
+    width: 0;
+    z-index: 0;
+}
+
+.container-articles2 .line-bottom {
+    width: 0;
+    height: 1px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.line-bottom {
+    width: 0;
+    height: 1px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.line-right {
+    height: 0;
+    width: 1px;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.container-articles2 .line-right {
+    height: 0;
+    width: 1px;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.container-info {
+    position: relative;
+    z-index: 1;
+    color: #000;
+}
+
+
+/* .article {
+    background-color: rgba(255, 255, 255, .8);
+    padding: 20px;
+    position: relative;
+} */
+
+.container-custom {
+    width: 100%;
+    background-color: #000;
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    overflow: hidden;
+}
+
+.line {
+    width: 0;
+    height: 1px;
+    background-color: #000;
+    margin-bottom: 10px;
+    margin-left: auto;
+}
+
+.container-articles2 .line {
+    margin-left: initial;
+    margin-right: auto;
+}
+
+.article-title {
+    font-size: 30px;
+    opacity: 0;
+    transform: translateY(10px);
+}
+
+.article-date {
+    opacity: 0;
+    transform: translateY(-10px);
+}
+
+.text {
+    padding-right: 20px;
+}
+
+.container-articles2 .text,
+.container-articles2 .title {
+    padding-left: 20px;
+}
