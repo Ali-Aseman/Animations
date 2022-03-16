@@ -1,0 +1,111 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    min-height: 100vh;
+    /* overflow: hidden; */
+}
+
+.container-custom {
+    width: 100%;
+    position: relative;
+    min-height: 100vh;
+    background-image: url('https://images.unsplash.com/photo-1523127669018-f09eda991efa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3025&q=80');
+    background-position: center;
+    background-size: cover;
+    /* overflow: hidden; */
+}
+
+.container-custom::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .2);
+}
+
+.contact-email-box {
+    width: 60px;
+    height: 80px;
+    background-color: Orange;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all .4s;
+    z-index: 0;
+}
+
+.contact:hover .contact-email-box {
+    left: -60px;
+    opacity: 1;
+}
+
+.contact {
+    position: absolute;
+    bottom: 0;
+    width: 700px;
+    height: 450px;
+    right: 0;
+}
+
+.contact-box {
+    width: 700px;
+    background-color: rgba(255, 255, 255, .96);
+    padding: 50px 80px;
+    position: absolute;
+    top: 0;
+    right: -700px;
+    bottom: 0;
+    opacity: 0;
+    z-index: 1;
+}
+
+.contact-social {
+    transform: rotate(0deg);
+    opacity: 0;
+    width: 52%;
+    position: absolute;
+    top: 250px;
+    right: -80px;
+}
+
+.contact-title {
+    opacity: 0;
+    transform: translateX(100px);
+}
+
+.contact-text {
+    opacity: 0;
+    transform: translateX(100px);
+}
+
+.contact-place {
+    opacity: 0;
+    transform: translateX(100px);
+}
+
+.contact-email {
+    opacity: 0;
+    transform: translateX(100px);
+}
+
+.contact-instagram {
+    opacity: 0;
+    transform: translateY(-100px);
+}
+
+.contact-linkedin {
+    opacity: 0;
+    transform: translateY(-100px);
+}
+
+.contact-github {
+    opacity: 0;
+    transform: translateY(-100px);
+}
